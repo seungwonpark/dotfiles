@@ -1,0 +1,17 @@
+[user]
+    name = Seung-won Park 박승원
+    email = yyyyy@snu.ac.kr
+[core]
+    editor = vim
+    excludesfile = ~/.gitexclude
+[init]
+    defaultBranch = main
+[log]
+    date = iso8601
+[color]
+    ui = auto
+[credential]
+    helper = cache --timeout=10800
+[credential "https://github.com"]
+    username = seungwonpark
+
