@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 create_symlinks() {
-    gln -rsf vim/.vimrc ~/.vimrc
+    gln -rsf vim/.vimrc ~
+    gln -rsf tmux/.tmux.conf ~
 }
 
 configure_git() {
