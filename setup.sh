@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# if not macOS, then use native GNU commands
+if [ `uname` != "Darwin" ]; then
+    shopt -s expand_aliases
+    alias gln='ln'
+fi
+
+
 create_symlinks() {
     gln -rsf vim/.vimrc ~
     gln -rsf tmux/.tmux.conf ~
