@@ -17,4 +17,7 @@
     helper = cache --timeout=10800
 [credential "https://github.com"]
     username = seungwonpark
-
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
