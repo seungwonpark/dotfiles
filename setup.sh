@@ -29,6 +29,7 @@ all() {
     create_symlinks
     configure_git
     install_vim_plugins
+    source aliases.sh
 }
 
 if [ -n "$1" ]; then
