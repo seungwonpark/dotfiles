@@ -1,20 +1,13 @@
 #!/usr/bin/env bash
 
-# if not macOS, then use native GNU commands
-if [ `uname` != "Darwin" ]; then
-    shopt -s expand_aliases
-    alias gln='ln'
-fi
-
-
 create_symlinks() {
-    gln -rsf vim/.vimrc ~
-    gln -rsf tmux/.tmux.conf ~
+    ln -rsf vim/.vimrc ~
+    ln -rsf tmux/.tmux.conf ~
 }
 
 configure_git() {
-    gln -rsf git/.gitconfig ~
-    gln -rsf git/.gitexclude ~
+    ln -rsf git/.gitconfig ~
+    ln -rsf git/.gitexclude ~
 }
 
 install_vim_plugins() {
