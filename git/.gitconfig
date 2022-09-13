@@ -1,6 +1,6 @@
 [user]
     name = Seung-won Park
-    email = yyyyy@snu.ac.kr
+    email = seungwon.park@moloco.com
 [core]
     editor = vim
     excludesfile = ~/.gitexclude
